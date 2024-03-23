@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://github.com/Grace-Njenga/product-preview)
+- Solution URL: (https://www.frontendmentor.io/solutions/responsive-grid-4FLh5VDePL)
 - Live Site URL: (https://frontend-mentor-product-preview.netlify.app/)
 
 ## My process
