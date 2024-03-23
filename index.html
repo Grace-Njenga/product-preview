@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | Product preview card component</title>
+
+		<!-- css stylesheet -->
+		<link rel="stylesheet" href="output.css" />
+
+		<!-- css media queries  -->
+		<link rel="stylesheet" href="media_queries.css" />
+	</head>
+	<body class="montserrat-medium">
+		<section class="container">
+			<!-- image card  -->
+			<div class="img_card card">
+				<!-- desktop image  -->
+				<img
+					src="./images/image-product-desktop.jpg"
+					alt="desktop version of chanelle"
+					class="show"
+				/>
+
+				<!-- phone image  -->
+				<img
+					src="./images/image-product-mobile.jpg"
+					alt="Phone version of chanelle"
+					class="hide"
+				/>
+			</div>
+
+			<!-- content card  -->
+			<div class="content_card card">
+				<!-- content text -->
+
+				<p class="content_card-heading">PERFUME</p>
+
+				<h2 class="content_card-title fraunces-bold">
+					Gabrielle Essence Eau De Parfum
+				</h2>
+
+				<p class="content_card-text-grey">
+					A floral, solar and voluptuous interpretation composed by
+					Olivier Polge, Perfumer-Creator for the House of CHANEL.
+				</p>
+
+				<!-- pricing  -->
+				<div class="content_card-price">
+					<p class="price-green fraunces-bold">
+						$149.99
+						<sup class="price-grey montserrat-medium">$169.99</sup>
+					</p>
+				</div>
+
+				<!-- call to action  -->
+				<div class="content_card-button">
+					<ion-icon name="cart-outline" size="large"></ion-icon>
+					<a href="#" class="button-link montserrat-medium">
+						Add to Cart</a
+					>
+
+					<!-- add an icon cart  -->
+				</div>
+			</div>
+		</section>
+
+		<!-- icon package  -->
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+		></script>
+	</body>
+</html>

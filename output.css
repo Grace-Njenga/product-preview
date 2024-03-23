@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,500;1,500&display=swap");
+
+/* CSS RESET PROPERTIES  */
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	max-width: 100%;
+}
+
+:root {
+	--primary-color-green: hsl(158, 36%, 37%);
+	--color-dark-green: hsl(158, 36%, 17%);
+	--secondary-color-cream: hsl(30, 38%, 92%);
+
+	--neutral-dark-blue: hsl(212, 21%, 14%);
+	--neutral-grayish-blue: hsl(228, 12%, 48%);
+	--neutral-white: hsl(0, 0%, 100%);
+}
+
+/* font family fraunces  */
+.fraunces-bold {
+	font-family: "Fraunces", serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+	font-variation-settings: "SOFT" 0, "WONK" 0;
+}
+
+/* font family montserrat  */
+.montserrat-medium {
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+}
+
+body {
+	background-color: var(--secondary-color-cream);
+	font-size: 0.875rem !important;
+
+	/* place the product card right in the middle */
+	display: grid;
+	min-height: 100vh;
+	place-content: center;
+	margin: 1rem;
+
+	/* Typographic tweaks!
+   	Add accessible line-height
+   	Improve text rendering */
+
+	line-height: 1.7;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* improing media defaults  */
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+/* remove built in typographic fonts  */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* avoid text overflows  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+/*GENERAL SYTLING--> styling the product card  */
+
+.container {
+	--container-padding: 1.5rem;
+	--grid-gap: 1rem;
+	background-color: var(--neutral-white);
+	border-radius: 0.5em;
+	overflow: hidden;
+
+	display: grid;
+	/* height: 100dvh; */
+	/* width: 60%; */
+	max-width: 600px;
+	margin: 0 auto;
+	grid-template-columns: 1fr 1fr;
+}
+
+img {
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+.hide {
+	display: none;
+}
+
+.content_card {
+	display: grid;
+	gap: var(--grid-gap);
+	padding: var(--container-padding);
+}
+.content_card-heading {
+	letter-spacing: 6px;
+	font-size: small;
+	color: var(--neutral-grayish-blue);
+}
+.content_card-title {
+	font-size: 1.8rem;
+	line-height: 1;
+	color: var(--neutral-dark-blue);
+}
+.content_card-text-grey,
+.price-grey,
+.content_card-text {
+	color: var(--neutral-grayish-blue);
+}
+.price-green {
+	color: var(--primary-color-green);
+	font-weight: bolder;
+	font-size: 2rem;
+}
+.price-grey {
+	text-decoration: line-through;
+	margin-left: 1em;
+	font-size: small;
+}
+.content_card-button {
+	background-color: var(--primary-color-green);
+	padding: 0.5em;
+	width: 100%;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	border: 0;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	border-radius: 5px;
+	color: var(--neutral-white);
+}
+.content_card-button:is(:hover, :focus) {
+	background-color: var(--color-dark-green);
+}
+.button-link {
+	text-decoration: none;
+	color: var(--neutral-white);
+	font-weight: bold;
+	font-size: 1rem;
+}
